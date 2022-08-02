@@ -51,6 +51,7 @@ def main():
   if st.button('文章生成'):
 
     progress_num = 30 
+    progress_bar.progress(progress_num)
     status_text.text(f'Progress: {progress_num}%')
     process_text.text("文章を生成しています...これには時間がかかるかもしれません。f")
     start = time.time()
