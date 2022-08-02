@@ -53,7 +53,7 @@ def main():
     progress_num = 30 
     progress_bar.progress(progress_num)
     status_text.text(f'Progress: {progress_num}%')
-    process_text.text("文章を生成しています...これには時間がかかるかもしれません。f")
+    process_text.text("文章を生成しています...これには時間がかかるかもしれません。")
     start = time.time()
 
     # APIを使ってHuggingfaceから文章を取ってくる。
