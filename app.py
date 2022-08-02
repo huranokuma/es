@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import time
 
-API_KEY = st.secrets.AzureApiKey.key
+API_KEY = st.secrets.HugApiKey.key
 API_URL = "https://api-inference.huggingface.co/models/huranokuma/es"
 headers = {"Authorization": "Bearer "+API_KEY}
 
