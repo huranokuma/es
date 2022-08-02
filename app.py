@@ -51,7 +51,6 @@ def main():
   if st.button('文章生成'):
 
     progress_num = 30 
-    progress_bar = st.progress(progress_num)
     status_text.text(f'Progress: {progress_num}%')
     process_text.text("文章を生成しています...これには時間がかかるかもしれません。f")
     start = time.time()
@@ -71,8 +70,8 @@ def main():
                 })
 
     process_text.text("ESの生成が終了しました。")
-    elapsed_time =time.time()-start
-    st.info(f'生成結果 経過時間{elapsed_time}秒')
+    elapsed_time =round(time.time()-start,2)
+    st.info(f'生成結果 : 経過時間{elapsed_time}秒')
     progress_num = 100
     status_text.text(f'Progress: {progress_num}%')
     st.write(output[0]['generated_text'])
