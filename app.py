@@ -18,18 +18,18 @@ def main():
                   value=100,
                   )
   
-  top_p = st.number_input(label='top p',
+  top_p = st.number_input(label='top p : (上位 P %の単語から選んできます)',
                   min_value=0.0,
                   max_value=1.0,
                   value=0.95
   )
 
-  top_k = st.slider(label='top k',
+  top_k = st.slider(label='top k : (上位k個の文章を保持します)',
                 min_value=0,
                 max_value=1000,
                 value=500
 )
-  temperature = st.number_input(label='temperature',
+  temperature = st.number_input(label='temperature : (高いほどランダム性が上がり、低いほど同じ結果が出力されます)',
                 min_value=0.0,
                 max_value=100.0,
                 value=1.00
