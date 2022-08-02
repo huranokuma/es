@@ -9,3 +9,4 @@ https://zenn.dev/megane_otoko/articles/070_text_generator
 https://huggingface.co/huranokuma/es
 
 ウェブアプリ
+https://huranokuma-es-app-9t34vl.streamlitapp.com/
