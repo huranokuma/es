@@ -2,9 +2,9 @@ import streamlit as st
 import requests
 import time
 
-API_KEY = st.secrets.HugApiKey.key
+#API_KEY = st.secrets.HugApiKey.key
 API_URL = "https://api-inference.huggingface.co/models/huranokuma/es"
-headers = {"Authorization": API_KEY}
+headers = {"Authorization": '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'}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
