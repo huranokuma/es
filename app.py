@@ -61,6 +61,8 @@ def main():
   status_text.text(f'Progress: {progress_num}%')
   progress_bar.progress(progress_num)
 
+  process_text.text("モデルの読み込みが終了しました。文章の生成が出来ます。")
+
   if st.button('文章生成'):
 
     process_text.text("文章を生成しています...")
