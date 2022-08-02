@@ -3,7 +3,7 @@ import requests
 import time
 
 API_URL = "https://api-inference.huggingface.co/models/huranokuma/es"
-headers = {"Authorization": "Bearer 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"}
+headers = {"Authorization": API_TOKEN}
 
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
