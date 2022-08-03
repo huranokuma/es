@@ -10,7 +10,6 @@ headers = {"Authorization": "Bearer "+API_KEY}
 st.set_page_config(
      page_title="ESを書くAI",
      page_icon="🤖",
-     initial_sidebar_state="expanded",
  )
 
 def query(payload):
@@ -18,7 +17,7 @@ def query(payload):
 	return response.json()
 
 def main():
-  st.title("AIによる自動ES作成")  
+  st.title("工事中です")  
 
   max_length = st.slider(label='最大文字数(最大トークン数)',
                   min_value=50,
