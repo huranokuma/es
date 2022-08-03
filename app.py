@@ -14,7 +14,7 @@ def main():
   st.title("AIによる自動ES作成")  
 
   max_length = st.slider(label='最大文字数',
-                  min_value=30,
+                  min_value=50,
                   max_value= 500,
                   value=100,
                   )
