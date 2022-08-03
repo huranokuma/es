@@ -6,6 +6,11 @@ API_KEY = st.secrets.HugApiKey.key
 API_URL = "https://api-inference.huggingface.co/models/huranokuma/es"
 headers = {"Authorization": "Bearer "+API_KEY}
 
+st.set_page_config(
+     page_title="ESを書くAI",
+     page_icon="🤖",
+ )
+
 def query(payload):
 	response = requests.post(API_URL, headers=headers, json=payload)
 	return response.json()
