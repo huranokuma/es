@@ -19,7 +19,7 @@ def query(payload):
 def main():
   st.title("AIによる自動ES作成")  
 
-  max_length = st.slider(label='最大文字数(最大トークン数)',
+  min_length = st.slider(label='最小文字数(最大トークン数)',
                   min_value=50,
                   max_value= 500,
                   value=100,
@@ -66,8 +66,8 @@ def main():
     # APIを使ってHuggingfaceから文章を取ってくる。
     output = query({"inputs": prompt_text,
                 "parameters": {
-                               "max_length":max_length,
-                               "min_length":50,
+                               "max_length":500,
+                               "min_length":min_length,
                                "top_p":top_p,
                                "top_k":top_k,
                                "temperature":temperature,
